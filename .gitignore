@@ -1,0 +1,11 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+bioinfo/
+stats/
+snpcall/
+.gitattributes
+.DS_Store
+.idea/
+pixi.toml
+pixi.lock
