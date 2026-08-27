@@ -5,7 +5,7 @@ bioinfo/
 stats/
 snpcall/
 .gitattributes
-.DS_Store
+*.DS_Store
 .idea/
 pixi.toml
 pixi.lock
