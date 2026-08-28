@@ -5,7 +5,8 @@
 ![git](images/git_version.png)
 
 ### AI code editor
-VSCode
+##### VSCode
+
 ![VScode](images/vscode_codex.png)
 
 ### Github account
@@ -21,11 +22,9 @@ touch week1_hw/README.md # create file
 
 ### samtools version
 ```bash
-linaitan@e5-ce-lmf-l2001 ~/BMMB_852
-$ samtools --version
-samtools 1.24
-(bioinfo)
+samtools --version
 ```
+![samtools](images/samtools.png)
 
 ### Create nested directory and file
 ```bash
