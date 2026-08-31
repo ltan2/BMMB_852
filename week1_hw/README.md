@@ -17,6 +17,8 @@ https://github.com/ltan2/BMMB_852.git
 mkdir week1_hw # create dir
 touch week1_hw/README.md # create file
 ```
+
+#### Output:
 ![git](images/dir_file.png)
 
 
@@ -24,6 +26,8 @@ touch week1_hw/README.md # create file
 ```bash
 samtools --version
 ```
+
+#### Output:
 ![samtools](images/samtools.png)
 
 ### Create nested directory and file
@@ -31,6 +35,8 @@ samtools --version
 mkdir -p week1_hw/demo # create parent and child dir
 touch week1_hw/demo/hello.txt # create file
 ```
+
+#### Output:
 ![nested_dir_file](images/nested_dir_file.png)
 
 ### Create files in different directory
@@ -38,13 +44,12 @@ touch week1_hw/demo/hello.txt # create file
 touch week1_hw/hello.txt # create in week1_hw dir
 touch hello.txt # create in curr dir
 ```
+
+#### Output:
 ![diff_dir_files](images/diff_dir_files.png)
 
 ### Access file in relative and absolute path
 ```bash
-pwd
-/Users/linaitan/BMMB_852
-
 cat week1_hw/demo/hello.txt # print contents of file from relative path
 cat /Users/linaitan/BMMB_852/week1_hw/demo/hello.txt # print contents of file from absolute path
 ```
