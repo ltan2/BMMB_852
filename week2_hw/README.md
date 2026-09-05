@@ -76,7 +76,7 @@ This command does not remove the Makefile or README.md but removes all the files
 
 ### Selected genome
 
-I selected *Prunus mume* (Japanese apricot/Umeboshi). Its GenBank assembly accession is
+I selected *Prunus mume* (Japanese apricot/Umeboshi). Its NCBI RefSeq assembly id is
 `GCF_000346735.1`, and its assembly name is `P.mume_V1.0`.
 
 Insert picture of what Umeboshi looks like cause I got hungry doing this assignment lol
@@ -127,14 +127,14 @@ The number is obtained from the following calculation:
 awk -F '\t' '$3=="region"{n=$5-$4+1;if($9~/genome=chromosome/)c+=n;if($9!~/genome=plastid/)t+=n}END{print 100*c/t}' data/gff/GCF_000346735.1.gff
 ```
 
-I calculate the total length of the nuclear genome, including both chromosomes and unplaced scaffolds, and then divide the length assigned to chromosomes by this total. The plastid genome is excluded because it is separate from the nuclear genome. This calculation gives the percentage of the nuclear assembly organized into chromosomes.
+I calculate the total length of the nuclear genome, including both chromosomes and unplaced scaffolds, and then divide the length assigned to chromosomes by this total. The plastid genome is excluded because it is separate from the nuclear genome. This calculation gives the percentage of the nuclear assembly organized into chromosomes which is quite high.
 
 ### Visualize a Genome
 
 #### Question 1: How tightly packed are the genes in this genome? Estimate the gene-to-gene distance via the browser
 
-They are about 400-500kb apart, so I would not consider them tightly packed
-![q1](images/genes.png)
+They are about 20-30kb apart, so I would not consider them tightly packed
+![q1](images/gene.png)
 
 #### Question 2: Pick a coordinate on the chromosome and visually inspect the sequence regions around it.
 I picked NC_024126.1:35,800
@@ -152,11 +152,12 @@ The backward reading:
 The 3 reading frames are: Q(glutamine), S(serine), A(alanine)
 
 #### Question 4: Identify the type of feature displayed as a data track.
-The data track displayed is the sequence
+The feature type displayed on the data track is a gene
+![q4](images/feature.png)
 
 #### Question 5: Color features by their strand orientation.
 ![q5](images/track_color.png)
 
-I picked red, so now my negative strand is red
+I picked red, so now my negative strand is red while my forward strand still remains blue
 
 ![q5_o](images/outcome.png)
