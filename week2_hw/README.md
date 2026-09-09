@@ -133,7 +133,7 @@ I calculate the total length of the nuclear genome, including both chromosomes a
 
 #### Question 1: How tightly packed are the genes in this genome? Estimate the gene-to-gene distance via the browser
 
-They are about 20-30kb apart, so I would not consider them tightly packed
+They are about 2-3kb apart, so I would not consider them tightly packed
 ![q1](images/gene.png)
 
 #### Question 2: Pick a coordinate on the chromosome and visually inspect the sequence regions around it.
