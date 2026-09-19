@@ -1,4 +1,4 @@
-SRR_ID ?=
+SRR_ID ?= SRR39371950
 N   ?= 10000
 FILES ?=
 FASTP_OPTS = --cut_front --cut_tail --cut_mean_quality 20
@@ -15,7 +15,10 @@ endef
 .DELETE_ON_ERROR:
 
 all:
-	@echo 'Run qc, trim, or qc-trim explicitly with FILES="read1.fastq [read2.fastq]".'
+	make download
+	make qc FILES="data/fastq/*.fastq"
+	make trim FILES="data/fastq/*.fastq"
+	make qc-trim FILES="data/fastq/*.fastq"
 
 initialization:
 	mkdir -p data/fastq data/trimmed data/qc/raw data/qc/trimmed
