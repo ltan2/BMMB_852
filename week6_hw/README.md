@@ -20,8 +20,7 @@ Reads align across the region with generally good but uneven coverage, and most 
 ![sample3](images/sample3a.png)
 ![sample3](images/sample3b.png)
 
-Most read pairs appear consistent with the reference as indicated by the gray color. Red pairs in an otherwise expected-orientation group map farther apart than expected indicate larger inferred insert size. This can support a deletion in the sample relative to the reference. The green strands direction appeared to be flip - left read maps to the reverse strand, and the right read maps to the forward strand indicating tandem duplication or translocation
-
+Most read pairs appear consistent with the reference as indicated by the gray color. Red pairs in an otherwise expected-orientation group map farther apart than expected indicate larger inferred insert size. This can support a deletion in the sample relative to the reference. The green strands direction appeared to be flip - left read maps to the reverse strand, and the right read maps to the forward strand indicating tandem duplication
 ### Sample 4
 
 ![sample4](images/sample4a.png)
