@@ -33,4 +33,4 @@ The scattered colored bases represent mismatches or other alignment differences 
 ![sample5](images/sample5a.png)
 ![sample5](images/sample5b.png)
 
-Most issues out of all samples. Red pairs in an otherwise expected-orientation group map farther apart than expected indicate larger inferred insert size. This can support a deletion in the sample relative to the reference. The green strands direction appeared to be flip - left read maps to the reverse strand, and the right read maps to the forward strand indicating tandem duplication or translocation
+Most issues out of all samples. Red pairs in an otherwise expected-orientation group map farther apart than expected indicate larger inferred insert size. This can support a deletion in the sample relative to the reference. The green strands direction appeared to be flip - left read maps to the reverse strand, and the right read maps to the forward strand indicating translocation
