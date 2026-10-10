@@ -46,18 +46,22 @@ All output of your file are in data/
 
 ## Questions to address
 
-1. How many variants were called?
+### How many variants were called?
+
 BCFtools called 373,843 variant sites in sample DRR729363. These are unfiltered calls, so the total includes calls with weak evidence.
 
-2. What kinds of variants are present?
-There are 335,702 SNP sites and 38,141 insertion/deletion sites (indels). The report also lists 2,179 multiallelic sites, which are included in these totals. No MNPs or other variant types were reported. The transition/transversion ratio is 1.65.
+### What kinds of variants are present?
 
-3. Which calls look like true variants, and which look like errors?
-The SNP at NC_024126.1:1651 (C → A) looks like a true SNP. Its QUAL is 225.4, and all 10 reads counted in FORMAT/AD support the alternate allele, with 4 forward-strand and 6 reverse-strand reads.
+From data/reports/DRX709374.vcf.stats.txt, there are 335,702 SNP sites and 38,141 insertion/deletion sites (indels). The report also lists 2,179 multiallelic sites, which are included in these totals. No MNPs or other variant types were reported. The transition/transversion ratio is 1.65.
+
+### Which calls look like true variants, and which look like errors? Are the calls supported by the alignments?
+
+The SNP at NC_024126.1:1651 (C → A) looks like a true SNP. Its QUAL is 225.4, and all 10 reads counted in FORMAT/AD support the alternate allele, with 4 forward-strand and 6 reverse-strand reads. Thus, alignment support is strong
 ![high-qual](images/high-qual.png)
 
 The SNP at NC_024126.1:5857 (T → C) is a possible error. Its QUAL is only 4.887, and only 3 of 13 reads support the alternate allele. All three alternate-supporting reads are on the forward strand. The alignment evidence therefore provides weak support, although it does not prove that the call is false.
 ![low-qual](images/low-qual.png)
 
+Some other type of variant besides SNP such as a 2 base deletion (TGA -> T) can be observed at NC_024126.1:8,168,006-8,168,360. Its QUAL is 199.1, with 9 alternate-supporting reads, split 4 forward / 5 reverse. MAPQ = 60 indicating the aligner has high confidence in where this read maps.Base T @ QV 37, the anchor base has high base quality. ogether with the VCF’s nine alternate-supporting reads on both strands, this provides convincing alignment support for the deletion.
+![high-del-qual](images/high-delete.png)
 
-4. Are the calls supported by the alignments?
