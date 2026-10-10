@@ -8,3 +8,4 @@ Repo for my BMMB 852 homework
 - [week4](week4_hw)
 - [week5](week5_hw)
 - [week6](week6_hw)
+- [week7](week7_hw)
