@@ -46,7 +46,7 @@ help:
 		'make clean                   Delete the entire data directory, including results.' \
 		'make help                    Show this help (also shown by plain make).' 
 
-all: download-genome download-read align stats variant-stats
+all: download-genome download-read gff align stats variant-stats
 
 download-genome: $(GENOME)
 download-read: $(READ1) $(READ2)
