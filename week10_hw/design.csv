@@ -1,0 +1,9 @@
+Accession,ReadPairs,BioProjectId,GEOAccession,BioSample,Description,LibraryLayout,LibraryStrategy,Title,Condition,Genotype,Treatment,Time,Replicate,Control,Characteristics,TreatmentProtocol,MetadataStatus
+SRR40530217,1200000,PRJNA1523976,GSM10029277,SAMN62944928,sth1_1hr_rep1,PAIRED,ATAC-seq,sth1_1hr_rep1,,,sth1 rapamycin,,,,"{""cell type"": ""w303"", ""treatment"": ""sth1 rapamycin""}",,GEO
+SRR40530219,1200000,PRJNA1523976,GSM10029275,SAMN62944930,sth1_0hr_rep3,PAIRED,ATAC-seq,sth1_0hr_rep3,,,sth1 dmso,,,,"{""cell type"": ""w303"", ""treatment"": ""sth1 dmso""}",,GEO
+SRR40530214,1200000,PRJNA1523976,GSM10029280,SAMN62944925,sth1_1hr_rep4,PAIRED,ATAC-seq,sth1_1hr_rep4,,,sth1 rapamycin,,,,"{""cell type"": ""w303"", ""treatment"": ""sth1 rapamycin""}",,GEO
+SRR40530221,1200000,PRJNA1523976,GSM10029273,SAMN62944932,sth1_0hr_rep1,PAIRED,ATAC-seq,sth1_0hr_rep1,,,sth1 dmso,,,,"{""cell type"": ""w303"", ""treatment"": ""sth1 dmso""}",,GEO
+SRR40530218,1200000,PRJNA1523976,GSM10029276,SAMN62944929,sth1_0hr_rep4,PAIRED,ATAC-seq,sth1_0hr_rep4,,,sth1 dmso,,,,"{""cell type"": ""w303"", ""treatment"": ""sth1 dmso""}",,GEO
+SRR40530220,1200000,PRJNA1523976,GSM10029274,SAMN62944931,sth1_0hr_rep2,PAIRED,ATAC-seq,sth1_0hr_rep2,,,sth1 dmso,,,,"{""cell type"": ""w303"", ""treatment"": ""sth1 dmso""}",,GEO
+SRR40530215,1200000,PRJNA1523976,GSM10029279,SAMN62944926,sth1_1hr_rep3,PAIRED,ATAC-seq,sth1_1hr_rep3,,,sth1 rapamycin,,,,"{""cell type"": ""w303"", ""treatment"": ""sth1 rapamycin""}",,GEO
+SRR40530216,1200000,PRJNA1523976,GSM10029278,SAMN62944927,sth1_1hr_rep2,PAIRED,ATAC-seq,sth1_1hr_rep2,,,sth1 rapamycin,,,,"{""cell type"": ""w303"", ""treatment"": ""sth1 rapamycin""}",,GEO
