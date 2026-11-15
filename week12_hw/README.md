@@ -81,37 +81,37 @@ U6	0	0	0	0	0	0
 
 ### Refer to your previous assignment that visually identified highly expressed genes. Does your count matrix support the visually identified behavior?
 
-In week 11, I looked at EWSR1 and SYNGR1 for highly expressed genes and  for zero expression. Here are my conclusions from week 11:
+In week 11, I looked at EWSR1 and SYNGR1 for highly expressed genes and  for zero expression. 
 
-EWSR1:
+Here are my conclusions from week 11 on EWSR1:
 ```text
 The EWSR1 gene around chr22:29,261,792-29,305,428 appears to show strong expression with substantial RNA-seq coverage and peaks across all 6 samples. At one inspected position within EWSR1, the exon coverage appear to be around 10-12 for HBR and 20-40 for UHR
 ```
 
-Looking at the gene_counts matrix, they agree
+Looking at the gene_counts matrix for week 12, they agree
 ```bash
 gene_name	HBR_1	HBR_2	HBR_3	UHR_1	UHR_2	UHR_3
 EWSR1	326.999	341	347	895	646.998	815.999
 ```
 
-In week 11 I wrote about SYNGR1:
+Here are my conclusions from week 11 on SYNGR1:
 ```text
 SYNGR1 gene generally showed higher expression in HBR than UHR across all three replicates. The mean assigned read count was 874 in HBR and 48 in UHR, corresponding to an approximately 18.2-fold increase in HBR using unnormalized counts.
 In a specific SYNGR1-001 transcript, the HBR value is much higher than UBR, about 23x fold
 ```
 
-Looking at the gene_counts matrix, they agree
+Looking at the gene_counts matrix in week 12, they agree
 ```bash
 gene_name	HBR_1	HBR_2	HBR_3	UHR_1	UHR_2	UHR_3
 SYNGR1	758	992.001	857	51	46.001	41
 ```
 
-OR11H1:
+Here are my conclusions from week 11 on OR11H1:
 ```text
 The OR11H1 gene appears to not have any detectable expression in any of the 6 samples. No RNA-seq coverage was observed across the gene
 ```
 
-Looking at the gene_counts matrix, they agree
+Looking at the gene_counts matrix in week 12, they agree
 ```bash
 gene_name	HBR_1	HBR_2	HBR_3	UHR_1	UHR_2	UHR_3
 OR11H1	0	0	0	0	0	0
@@ -119,4 +119,4 @@ OR11H1	0	0	0	0	0	0
 
 ### Write about some of your experiences with AI prompting/programming. Describe the challenges you experienced while getting the process to work.
 
-Just like writing, AI code generation loves to be lengthy and unnecessary with checks that nobody cares, nested for loops, unecessary hash sets. Need to prune your script
+Just like writing, AI-generated code can be unnecessarily verbose. Too many checks, nested loops, hash sets, and complex regex. Sometimes it's so convoluted that it's hard to understand what the code is even doing. As my trust in AI generated code increases, my drive to do code reviews decreases.
