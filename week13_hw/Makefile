@@ -6,7 +6,7 @@ ANALYSIS = edger.csv deseq2.csv
 
 .PHONY: all simulate download-simulation-files run-edger run-deseq2 calc-confusion-matrix
 
-all: calc-confusion-matrix
+all: simulate download-simulation-files calc-confusion-matrix
 
 simulate: src/simulate_counts.r
 	$(RSCRIPT) src/simulate_counts.r -o $(COUNTS) -d $(DESIGN)

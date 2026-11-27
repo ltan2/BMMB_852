@@ -4,7 +4,6 @@ Which genes have different expression in group B versus group A?
 
 ### Steps to run
 ```bash
-make download-simulation-files
 make all
 ```
 
